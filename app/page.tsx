@@ -9,7 +9,7 @@ function calculateWinner(squares: (string | null)[]) {
     [0, 3, 6], [1, 4, 7], [2, 5, 8], // cols
     [0, 4, 8], [2, 4, 6],            // diags
   ];
-  for (let line of lines) {
+  for (const line of lines) {
     const [a, b, c] = line;
     if (
       squares[a] &&
